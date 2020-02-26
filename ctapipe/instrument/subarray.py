@@ -245,10 +245,12 @@ class SubarrayDescription:
 
         tel_positions = {tid: self.positions[tid] for tid in tel_ids}
         tel_descriptions = {tid: self.tel[tid] for tid in tel_ids}
-
+        print("tel_positions: ", tel_positions)
+        print("tel_descriptions :", tel_descriptions)
         newsub = SubarrayDescription(
             name, tel_positions=tel_positions, tel_descriptions=tel_descriptions
         )
+        print("newsub: ", newsub)
         return newsub
 
     def peek(self):
